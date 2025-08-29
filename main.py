@@ -1,62 +1,111 @@
+import time
 import cv2
 import mss
 import numpy as np
-import pytesseract
-from utils import sct_to_image
-from config import BANNER_POS, WISH_POS, VALID_BANNERS, WISH_TEMPLATE_PATH
+import easyocr
+import torch
+import ctypes
+import win32api
+from config import WISH_ITEM_POS, SUMMON_SCREEN_PATH, SUMMON_SCREEN, X1_WARP, X10_WARP , VALID_ITEMS
 
-#A class for tracking the last seen banner type
+ctypes.windll.user32.SetProcessDPIAware()
+
+prev_state = 0
+press_inside = None
+
+# A class for state management
 class AppState():    
     def __init__(self):
-        self.banner_type = None
-        
+        self.on_summon_screen = False
+        self.waiting_for_next = False
+
+
+def normalize_text(text):
+    cleaned = " ".join(text.lower().split())
+    
+    if cleaned in VALID_ITEMS:
+        return cleaned
+
+    if cleaned.endswith(" new"):
+        cleaned_short = cleaned[:-4].strip()
+        if cleaned_short in VALID_ITEMS:
+            return cleaned_short
+    
+    return None
+
 if __name__ == "__main__":
     state = AppState()
-    wish_template = cv2.imread(WISH_TEMPLATE_PATH, cv2.IMREAD_GRAYSCALE)
     
-    if wish_template is None:
-        raise FileNotFoundError(f"Wish template not found at {WISH_TEMPLATE_PATH}")
+    reader = easyocr.Reader(['en'], gpu=torch.cuda.is_available())
+    summon_screen = cv2.imread(SUMMON_SCREEN_PATH, cv2.IMREAD_GRAYSCALE)
     
     with mss.mss() as sct:
-        banner_position = {
-                    "top": BANNER_POS[0],
-                    "left": BANNER_POS[1],
-                    "width": BANNER_POS[2],
-                    "height": BANNER_POS[3]
-                }
-        
-        wish_position = {
-                    "top": WISH_POS[0],
-                    "left": WISH_POS[1],
-                    "width": WISH_POS[2],
-                    "height": WISH_POS[3]
-                }
-        
+
         while True:
-            sct_img = sct.grab(banner_position)
+            exchange_crop = sct.grab(SUMMON_SCREEN)
             
-            pil_img = sct_to_image(sct_img)
+            # Check if we are on summon screen by matching a template unique to the summon screen
+            img = np.array(exchange_crop)
+            img_gray = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
             
-            custom_config = r'-c tessedit_char_whitelist=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
+            result = cv2.matchTemplate(img_gray, summon_screen, cv2.TM_CCOEFF_NORMED)
             
-            banner_type = pytesseract.image_to_string(pil_img, lang='eng', config=custom_config).strip()
-
-            #if the banner type is one of the following, save it in the global state
-            if banner_type in VALID_BANNERS:
+            threshold = 0.8
+            loc = np.where(result >= threshold)
                 
-                state.banner_type = banner_type
+            state.on_summon_screen = len(loc[0]) > 0
             
-            if state.banner_type != None:
-                sct_img = sct.grab(wish_position)
-                
-                img_gray = sct_to_image(sct_img, True)
-                
-                result = cv2.matchTemplate(img_gray, wish_template, cv2.TM_CCOEFF_NORMED)
-                threshold = 0.8
-                
-                loc = np.where(result >= threshold)
-
-                #if we detect a wish template, then last seen banner type *must* be the correct banner
-                if len(loc[0]) > 0:
-                    print(f'The user just wished on a {state.banner_type} banner!')
-                    state.banner_type = None
+            x, y = win32api.GetCursorPos()
+            state_mouse_active = state.on_summon_screen
+            
+            def in_banner(x, y, box):
+                top, left, w, h = box
+                right, bottom = left + w, top + h
+                return left <= x <= right and top <= y <= bottom
+            
+            state_mouse = win32api.GetKeyState(0x01)  # Left button
+            # Press detection
+            if state_mouse < 0 and prev_state >= 0:
+                if in_banner(x, y, X1_WARP):
+                    press_inside = "x1"
+                elif in_banner(x, y, X10_WARP):
+                    press_inside = "x10"
+                else:
+                    press_inside = None
+            
+            elif state_mouse >= 0 and prev_state < 0:
+                if press_inside and state_mouse_active:
+                    # Confirm release is inside same banner
+                    if (press_inside == "x1" and in_banner(x, y, X1_WARP)) or (press_inside == "x10" and in_banner(x, y, X10_WARP)):
+                        item_list = []
+                        
+                        while len(item_list) != 10:
+                            
+                            wish_img = sct.grab(WISH_ITEM_POS)
+                            img_num = np.array(wish_img)
+                            wish_item = reader.readtext(img_num, detail=0, decoder="greedy", paragraph=True, blocklist="123456890")
+                            
+                            if not wish_item:
+                                if not item_list:
+                                    continue
+                                else:
+                                    state.waiting_for_next = False
+                                    
+                            else:          
+                                if not state.waiting_for_next:
+                                    text = wish_item[0]
+                                    
+                                    valid_item = normalize_text(text)
+                                    
+                                    if valid_item:
+                                        item_list.append(valid_item)
+                                        state.waiting_for_next = True
+                            
+                        state.waiting_for_next = False
+                        print(item_list)
+                        
+                press_inside = None
+            
+            prev_state = state_mouse
+            
+            time.sleep(0.01)

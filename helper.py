@@ -4,6 +4,7 @@ import mss.tools
 import numpy as np
 import pytesseract
 from PIL import Image
+from config import SUMMON_SCREEN
 
 class Helper:
     def capturePart(pos):
@@ -17,14 +18,14 @@ class Helper:
                 }
                 sct_img = sct.grab(monitor)
 
-                img = np.array(sct_img)  # BGRA
+                img = np.array(sct_img)
                 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGRA2RGB)
                 pil_img = Image.fromarray(img_rgb)
 
                 extracted_text = pytesseract.image_to_string(pil_img).strip()
                 print(extracted_text)
 
-    def getPartPos(file_name):
+    def getPartPos(self, file_name):
         icon_template = cv2.imread(file_name, cv2.IMREAD_GRAYSCALE)
         template_height, template_width = icon_template.shape[:2]
         with mss.mss() as sct:
@@ -49,7 +50,6 @@ class Helper:
                     print(f"Top: {top_left[1]}, Left: {top_left[0]}")
                     print(f"Width: {template_width}, Height: {template_height}")
                     
-                    # Optional: draw rectangle for visualization
                     cv2.rectangle(img, top_left, bottom_right, 255, 2)
                     cv2.imshow("Detected", img)
                     cv2.waitKey(0)
@@ -71,12 +71,18 @@ class Helper:
 
                 print(f"Saved {output}")
 
-    def matchTemplate(template_name):
-        icon_template = cv2.imread(template_name, cv2.IMREAD_GRAYSCALE)
+    def matchTemplate(self, template_path):
+        banner_position = {
+            "top": SUMMON_SCREEN[0],
+            "left": SUMMON_SCREEN[1],
+            "width": SUMMON_SCREEN[2],
+            "height": SUMMON_SCREEN[3]
+        }
+        icon_template = cv2.imread(template_path, cv2.IMREAD_GRAYSCALE)
         with mss.mss() as sct:
+            count = 1
             while True:
-                monitor = sct.monitors[1]
-                sct_img = sct.grab(monitor)
+                sct_img = sct.grab(banner_position)
                 img = np.array(sct_img)
                 img_gray = cv2.cvtColor(img, cv2.COLOR_BGRA2GRAY)
                 
@@ -86,5 +92,6 @@ class Helper:
                 loc = np.where(result >= threshold)
 
                 if len(loc[0]) > 0:
-                    print('DETECTED!!!!!!')
-                    break
+                    print('DETECTED!!!!!!', count)
+                    count += 1
+
