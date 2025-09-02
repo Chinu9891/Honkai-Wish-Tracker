@@ -6,7 +6,7 @@ import easyocr
 import torch
 import ctypes
 import win32api
-from config import WISH_ITEM_POS, SUMMON_SCREEN_PATH, SUMMON_SCREEN, X1_WARP, X10_WARP , VALID_ITEMS
+from config import WISH_ITEM_POS, SUMMON_SCREEN_PATH, SUMMON_SCREEN, X1_WARP, X10_WARP , VALID_DICT
 
 ctypes.windll.user32.SetProcessDPIAware()
 
@@ -23,24 +23,24 @@ class AppState():
 def normalize_text(text):
     cleaned = " ".join(text.lower().split())
     
-    if cleaned in VALID_ITEMS:
-        return cleaned
+    if cleaned in VALID_DICT:
+        return VALID_DICT[cleaned]
 
     if cleaned.endswith(" new"):
         cleaned_short = cleaned[:-4].strip()
-        if cleaned_short in VALID_ITEMS:
-            return cleaned_short
-    
+        if cleaned_short in VALID_DICT:
+            return VALID_DICT[cleaned_short]
     return None
 
 if __name__ == "__main__":
     state = AppState()
     
     reader = easyocr.Reader(['en'], gpu=torch.cuda.is_available())
+    print(reader.lang_char)
     summon_screen = cv2.imread(SUMMON_SCREEN_PATH, cv2.IMREAD_GRAYSCALE)
     
     with mss.mss() as sct:
-
+        count = 1
         while True:
             exchange_crop = sct.grab(SUMMON_SCREEN)
             
@@ -54,6 +54,10 @@ if __name__ == "__main__":
             loc = np.where(result >= threshold)
                 
             state.on_summon_screen = len(loc[0]) > 0
+            
+            if state.on_summon_screen:
+                print("We are on the summon screen", count)
+                count += 1
             
             x, y = win32api.GetCursorPos()
             state_mouse_active = state.on_summon_screen
@@ -85,6 +89,8 @@ if __name__ == "__main__":
                             img_num = np.array(wish_img)
                             wish_item = reader.readtext(img_num, detail=0, decoder="greedy", paragraph=True, blocklist="123456890")
                             
+                            print(wish_item)
+                            
                             if not wish_item:
                                 if not item_list:
                                     continue
@@ -100,6 +106,8 @@ if __name__ == "__main__":
                                     if valid_item:
                                         item_list.append(valid_item)
                                         state.waiting_for_next = True
+
+                            print(item_list)
                             
                         state.waiting_for_next = False
                         print(item_list)

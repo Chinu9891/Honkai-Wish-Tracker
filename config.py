@@ -240,3 +240,9 @@ VALID_ITEMS = {
     "dang heng",
     "march 7th"
 }
+
+VALID_DICT = {}
+
+for item in VALID_ITEMS:
+    modified = item.replace("!", "l")
+    VALID_DICT[modified] = item
