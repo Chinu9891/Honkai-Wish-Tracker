@@ -3,7 +3,6 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy import Integer, String, ForeignKey, Enum as SqlEnum, DateTime
 from database.core import Base
 from datetime import datetime, timezone
-from FastAPI.entities.user import User
 from enum import Enum
 
 class ItemType(str, Enum):
@@ -15,9 +14,9 @@ class WishItem(Base):
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
     item_name: Mapped[str] = mapped_column(String(32), nullable=False)
-    rarity: Mapped[int] = mapped_column(Integer, nullable=False)
-    item_type: Mapped[ItemType] = mapped_column(SqlEnum(ItemType), nullable=False)
+    # rarity: Mapped[int] = mapped_column(Integer, nullable=False)
+    # item_type: Mapped[ItemType] = mapped_column(SqlEnum(ItemType), nullable=False)
     created_at: Mapped[DateTime] = mapped_column(DateTime, default=datetime.now(timezone.utc), nullable=False)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), nullable=False)
 
-    user: Mapped[User] = relationship(back_populates="wishes")
+    user: Mapped["User"] = relationship(back_populates="wishes")
