@@ -6,7 +6,8 @@ import easyocr
 import torch
 import ctypes
 import win32api
-from config import WISH_ITEM_POS, SUMMON_SCREEN_PATH, SUMMON_SCREEN, X1_WARP, X10_WARP , VALID_DICT
+from config.config import WISH_ITEM_POS, SUMMON_SCREEN_PATH, SUMMON_SCREEN, X1_WARP, X10_WARP , VALID_DICT
+from datafiles.data_extractor import DataExtractor
 
 ctypes.windll.user32.SetProcessDPIAware()
 
@@ -18,7 +19,6 @@ class AppState():
     def __init__(self):
         self.on_summon_screen = False
         self.waiting_for_next = False
-
 
 def normalize_text(text):
     cleaned = " ".join(text.lower().split())
@@ -34,9 +34,10 @@ def normalize_text(text):
 
 if __name__ == "__main__":
     state = AppState()
-    
+    data_extractor = DataExtractor()
+    data_extractor.build_files()
     reader = easyocr.Reader(['en'], gpu=torch.cuda.is_available())
-    print(reader.lang_char)
+    
     summon_screen = cv2.imread(SUMMON_SCREEN_PATH, cv2.IMREAD_GRAYSCALE)
     
     with mss.mss() as sct:
@@ -79,11 +80,18 @@ if __name__ == "__main__":
             
             elif state_mouse >= 0 and prev_state < 0:
                 if press_inside and state_mouse_active:
+                    button_clicked = None
+                    
+                    if press_inside == "x1" and in_banner(x, y, X1_WARP):
+                        button_clicked = 1
+                    elif press_inside == "x10" and in_banner(x, y, X10_WARP):
+                        button_clicked = 10
+                        
                     # Confirm release is inside same banner
-                    if (press_inside == "x1" and in_banner(x, y, X1_WARP)) or (press_inside == "x10" and in_banner(x, y, X10_WARP)):
+                    if button_clicked:
                         item_list = []
                         
-                        while len(item_list) != 10:
+                        while len(item_list) != button_clicked:
                             
                             wish_img = sct.grab(WISH_ITEM_POS)
                             img_num = np.array(wish_img)

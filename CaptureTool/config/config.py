@@ -9,6 +9,12 @@ WISH_ITEM_POS = {
 
 # Position of an item unique to the summon screen
 
+base_width, base_height = 3840, 2160   # original 4K resolution
+target_width, target_height = 1920, 1080  # target resolution
+
+scale_x = target_width / base_width    # 1920 / 3840 = 0.5
+scale_y = target_height / base_height  # 1080 / 2160 = 0.5
+
 SUMMON_SCREEN = {
             "top": 1834,
             "left": 160,
@@ -16,6 +22,15 @@ SUMMON_SCREEN = {
             "height": 138
             }
 
+SUMMON_SCREEN_1080P = {
+    "top": int(SUMMON_SCREEN["top"] * scale_y),
+    "left": int(SUMMON_SCREEN["left"] * scale_x),
+    "width": int(SUMMON_SCREEN["width"] * scale_x),
+    "height": int(SUMMON_SCREEN["height"] * scale_y),
+}
+
+GAME_DATA_URLS = ["https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/index_min/en/light_cones.json",
+                  "https://raw.githubusercontent.com/Mar-7th/StarRailRes/master/index_min/en/characters.json"]
 
 VALID_BANNERS = {'Character Event Warp', 'Light Cone Event Warp', 'Regular Warp'}
 
@@ -25,6 +40,17 @@ SUMMON_SCREEN_PATH = 'assets/exchange.png'
 X1_WARP = (1919, 2335, 567, 91)
 # Position of the x10 warp button
 X10_WARP = (1923, 2998, 561, 84)
+
+PATHS_MAPPING = {
+    "Warrior": "Destruction",
+    "Rogue": "The Hunt",
+    "Mage": "Erudition",
+    "Shaman": "Harmony",
+    "Warlock": "Nihility",
+    "Knight": "Preservation",
+    "Priest": "Abundance",
+    "Memory": "Remembrance"
+}
 
 VALID_ITEMS = {
     "arrows",
@@ -168,7 +194,7 @@ VALID_ITEMS = {
     "the hell where ideals burn",
     "why does the ocean sing",
     "epoch etched in golden blood",
-    "cerydera",
+    "cerydra",
     "hysilens",
     "hyacine",
     "phainon",
@@ -237,7 +263,7 @@ VALID_ITEMS = {
     "herta",
     "astra",
     "arlan",
-    "dang heng",
+    "dan heng",
     "march 7th"
 }
 

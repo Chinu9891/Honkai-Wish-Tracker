@@ -1,0 +1,1577 @@
+[
+  {
+    "name": "Arrows",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Cornucopia",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Collapsing Sky",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Amber",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Void",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Chorus",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Data Bank",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Darting Arrow",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Fine Fruit",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Shattered Home",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Defense",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Loop",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Meshing Cogs",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Passkey",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Adversarial",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Multiplication",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Mutual Demise",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Pioneering",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Hidden Shadow",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Mediation",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Sagacity",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Shadowburn",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Reminiscence",
+    "rarity": 3,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Post-Op Conversation",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Good Night and Sleep Well",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Day One of My New Life",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Only Silence Remains",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Memories of the Past",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "The Moles Welcome You",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "The Birth of the Self",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Shared Feeling",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Eyes of the Prey",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Landau's Choice",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Swordplay",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Planetary Rendezvous",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "A Secret Vow",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Make the World Clamor",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Perfect Timing",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Resolution Shines As Pearls of Sweat",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Trend of the Universal Market",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Subscribe for More!",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Dance! Dance! Dance!",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Under the Blue Sky",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Geniuses' Repose",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Quid Pro Quo",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Fermata",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "We Are Wildfire",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "River Flows in Spring",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Past and Future",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Woof! Walk Time!",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "The Seriousness of Breakfast",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Warmth Shortens Cold Nights",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "We Will Meet Again",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "This Is Me!",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Return to Darkness",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Carve the Moon, Weave the Clouds",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Nowhere to Run",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Today Is Another Peaceful Day",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "What Is Real?",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Dreamville Adventure",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Final Victor",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Flames Afar",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Destiny's Threads Forewoven",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "The Day The Cosmos Fell",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "It's Showtime",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Indelible Promise",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Concert for Two",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Boundless Choreo",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "After the Charmony Fall",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Poised to Bloom",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Shadowed by Night",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Dream's Montage",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Victory In a Blink",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Geniuses' Greetings",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Sweat Now, Cry Less",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Journey, Forever Peaceful",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "The Story's Next Page",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Unto Tomorrow's Morrow",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "In Pursuit of the Wind",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "The Flower Remembers",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "A Trail of Bygone Blood",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "A Dream Scented in Wheat",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Holiday Thermae Escapade",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "See You at the End",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Before the Tutorial Mission Starts",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Hey, Over Here",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "For Tomorrow's Journey",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Ninja Record: Sound Hunt",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "The Great Cosmic Enterprise",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "The Forever Victual",
+    "rarity": 4,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Night on the Milky Way",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "In the Night",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Something Irreplaceable",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "But the Battle Isn't Over",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "In the Name of the World",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Moment of Victory",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Patience Is All You Need",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Incessant Rain",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Echoes of the Coffin",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "The Unreachable Side",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Before Dawn",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "She Already Shut Her Eyes",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Sleep Like the Dead",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Time Waits for No One",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "I Shall Be My Own Sword",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Brighter Than the Sun",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Worrisome, Blissful",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Night of Fright",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "An Instant Before A Gaze",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Past Self in Mirror",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Baptism of Pure Thought",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Earthly Escapade",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Reforged Remembrance",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Inherently Unjust Destiny",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Along the Passing Shore",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Whereabouts Should Dreams Rest",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Flowing Nightglow",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Sailing Towards a Second Life",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Yet Hope Is Priceless",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Those Many Springs",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Dance at Sunset",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "I Venture Forth to Hunt",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Scent Alone Stays True",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Abundance",
+    "element": null
+  },
+  {
+    "name": "Ninjutsu Inscription: Dazzling Evilbreaker",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "A Grounded Ascent",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Long Road Leads Home",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Time Woven Into Gold",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Into the Unreachable Veil",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "If Time Were a Flower",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "Flame of Blood, Blaze My Path",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Make Farewells More Beautiful",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Life Should Be Cast to Flames",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Long May Rainbows Adorn the Sky",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "Lies Dance on the Breeze",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Thus Burns the Dawn",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "A Thankless Coronation",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "The Hell Where Ideals Burn",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Why Does the Ocean Sing",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Epoch Etched in Golden Blood",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Harmony",
+    "element": null
+  },
+  {
+    "name": "On the Fall of an Aeon",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Destruction",
+    "element": null
+  },
+  {
+    "name": "Cruising in the Stellar Sea",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "The Hunt",
+    "element": null
+  },
+  {
+    "name": "Texture of Memories",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Preservation",
+    "element": null
+  },
+  {
+    "name": "Solitary Healing",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Nihility",
+    "element": null
+  },
+  {
+    "name": "Eternal Calculus",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Erudition",
+    "element": null
+  },
+  {
+    "name": "Memory's Curtain Never Falls",
+    "rarity": 5,
+    "item_type": "lightcone",
+    "path": "Remembrance",
+    "element": null
+  },
+  {
+    "name": "March 7th",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Preservation",
+    "element": "Ice"
+  },
+  {
+    "name": "Dan Heng",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Wind"
+  },
+  {
+    "name": "Himeko",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Fire"
+  },
+  {
+    "name": "Welt",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Kafka",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Thunder"
+  },
+  {
+    "name": "Silver Wolf",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Quantum"
+  },
+  {
+    "name": "Arlan",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Thunder"
+  },
+  {
+    "name": "Asta",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Fire"
+  },
+  {
+    "name": "Herta",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Ice"
+  },
+  {
+    "name": "Saber",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Wind"
+  },
+  {
+    "name": "Archer",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Quantum"
+  },
+  {
+    "name": "Bronya",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Wind"
+  },
+  {
+    "name": "Seele",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Quantum"
+  },
+  {
+    "name": "Serval",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Thunder"
+  },
+  {
+    "name": "Gepard",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Preservation",
+    "element": "Ice"
+  },
+  {
+    "name": "Natasha",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Abundance",
+    "element": "Physical"
+  },
+  {
+    "name": "Pela",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Ice"
+  },
+  {
+    "name": "Clara",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Physical"
+  },
+  {
+    "name": "Sampo",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Wind"
+  },
+  {
+    "name": "Hook",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Fire"
+  },
+  {
+    "name": "Lynx",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Abundance",
+    "element": "Quantum"
+  },
+  {
+    "name": "Luka",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Physical"
+  },
+  {
+    "name": "Topaz & Numby",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Fire"
+  },
+  {
+    "name": "Qingque",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Quantum"
+  },
+  {
+    "name": "Tingyun",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Thunder"
+  },
+  {
+    "name": "Luocha",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Abundance",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Jing Yuan",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Thunder"
+  },
+  {
+    "name": "Blade",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Wind"
+  },
+  {
+    "name": "Sushang",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Physical"
+  },
+  {
+    "name": "Yukong",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Fu Xuan",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Preservation",
+    "element": "Quantum"
+  },
+  {
+    "name": "Yanqing",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Ice"
+  },
+  {
+    "name": "Guinaifen",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Fire"
+  },
+  {
+    "name": "Bailu",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Abundance",
+    "element": "Thunder"
+  },
+  {
+    "name": "Jingliu",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Ice"
+  },
+  {
+    "name": "Dan Heng • Imbibitor Lunae",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Xueyi",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Quantum"
+  },
+  {
+    "name": "Hanya",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Physical"
+  },
+  {
+    "name": "Huohuo",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Abundance",
+    "element": "Wind"
+  },
+  {
+    "name": "Jiaoqiu",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Fire"
+  },
+  {
+    "name": "Feixiao",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Wind"
+  },
+  {
+    "name": "Yunli",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Physical"
+  },
+  {
+    "name": "Lingsha",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Abundance",
+    "element": "Fire"
+  },
+  {
+    "name": "Moze",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Thunder"
+  },
+  {
+    "name": "March 7th",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Fugue",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Fire"
+  },
+  {
+    "name": "Gallagher",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Abundance",
+    "element": "Fire"
+  },
+  {
+    "name": "Argenti",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Physical"
+  },
+  {
+    "name": "Ruan Mei",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Ice"
+  },
+  {
+    "name": "Aventurine",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Preservation",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Dr. Ratio",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Sparkle",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Quantum"
+  },
+  {
+    "name": "Black Swan",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Wind"
+  },
+  {
+    "name": "Acheron",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Thunder"
+  },
+  {
+    "name": "Robin",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Physical"
+  },
+  {
+    "name": "Firefly",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Fire"
+  },
+  {
+    "name": "Misha",
+    "rarity": 4,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Ice"
+  },
+  {
+    "name": "Sunday",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Jade",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Quantum"
+  },
+  {
+    "name": "Boothill",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "The Hunt",
+    "element": "Physical"
+  },
+  {
+    "name": "Rappa",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Imaginary"
+  },
+  {
+    "name": "The Herta",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Ice"
+  },
+  {
+    "name": "Aglaea",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Remembrance",
+    "element": "Thunder"
+  },
+  {
+    "name": "Tribbie",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Quantum"
+  },
+  {
+    "name": "Mydei",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Imaginary"
+  },
+  {
+    "name": "Anaxa",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Erudition",
+    "element": "Wind"
+  },
+  {
+    "name": "Cipher",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Quantum"
+  },
+  {
+    "name": "Castorice",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Remembrance",
+    "element": "Quantum"
+  },
+  {
+    "name": "Phainon",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Physical"
+  },
+  {
+    "name": "Hyacine",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Remembrance",
+    "element": "Wind"
+  },
+  {
+    "name": "Hysilens",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Nihility",
+    "element": "Physical"
+  },
+  {
+    "name": "Cerydra",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Wind"
+  },
+  {
+    "name": "{NICKNAME}",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Physical"
+  },
+  {
+    "name": "{NICKNAME}",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Destruction",
+    "element": "Physical"
+  },
+  {
+    "name": "{NICKNAME}",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Preservation",
+    "element": "Fire"
+  },
+  {
+    "name": "{NICKNAME}",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Preservation",
+    "element": "Fire"
+  },
+  {
+    "name": "{NICKNAME}",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Imaginary"
+  },
+  {
+    "name": "{NICKNAME}",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Harmony",
+    "element": "Imaginary"
+  },
+  {
+    "name": "{NICKNAME}",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Remembrance",
+    "element": "Ice"
+  },
+  {
+    "name": "{NICKNAME}",
+    "rarity": 5,
+    "item_type": "character",
+    "path": "Remembrance",
+    "element": "Ice"
+  }
+]

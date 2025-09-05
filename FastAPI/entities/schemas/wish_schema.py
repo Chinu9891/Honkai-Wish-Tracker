@@ -1,3 +1,4 @@
+from typing import Optional
 from pydantic import BaseModel
 from datetime import datetime
 from enum import Enum
@@ -6,14 +7,16 @@ class ItemType(str, Enum):
     CHARACTER = "character"
     LIGHTCONE = "lightcone"
 
+# What the client sends
 class WishCreate(BaseModel):
-    item_name: str  # What the client sends
+    name: str
+    rarity: int
+    item_type: str
+    element: Optional[str] = None
+    path: str 
 
 class WishSchema(BaseModel):
     id: int
-    item_name: str
-    # rarity: int
-    # item_type: ItemType
     created_at: datetime
 
     class Config:

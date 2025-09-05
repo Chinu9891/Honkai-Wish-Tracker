@@ -4,7 +4,7 @@ import mss.tools
 import numpy as np
 import pytesseract
 from PIL import Image
-from config import SUMMON_SCREEN
+from config.config import SUMMON_SCREEN
 
 class Helper:
     def capturePart(pos):
